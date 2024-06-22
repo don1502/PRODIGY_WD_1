@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    background-image: url("cloud2.jpg");
+    background-size: cover;
+    font-family:"Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container{
+  width: min(300px, 80vw);
+  background: radial-gradient(#fff2 30%, #fff4);
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3), -1px -1px 2px #fff, 1px 1px 2px #fbfbfb;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+h2, label, p{
+    color:#000000;
+    margin: 8px 0;
+}
+
+
+input{
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+button{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 50%;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: rgb(0,0,0);
+    color: #fff;
+}
+
+#temp-div p{
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info{
+    font-size: 20px;
+}
+
+#weather-icon{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px;
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast{
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item{
+    flex:  0 0 auto;
+    width: 80px;
+    display: flex;flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+    color: white; 
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading{
+    color: #fff;
+    margin-top: 10px;
+}
